@@ -28,12 +28,17 @@ class InstaList extends StatelessWidget {
                   new Text(
                     "blahblahblah",
                     style: TextStyle(fontWeight: FontWeight.bold),
-                  )
+                  ),
+                  new IconButton(icon: Icon(Icons.more_vert), onPressed: null)
                 ],
               ),
+            ),
+            Flexible(
+              fit: FlexFit.loose,
+              child: new Image.network("https://images.pexels.com/photos/1331979/pexels-photo-1331979.jpeg", fit: BoxFit.cover),
             )
           ],
-        ))
+        ));
 
   }
 
